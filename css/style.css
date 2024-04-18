@@ -1,0 +1,10 @@
+:root {
+  --primary: #474040;
+  --secondary: #424658;
+  --terciary: #e4e0da;
+}
+
+@font-face {
+  font-family: "colabero-regular"; /* un nombre pasar usar despues*/
+  src: url("/fonts/colabero-regular.ttf"); /*URL de la fuente*/
+}
