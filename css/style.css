@@ -5,6 +5,59 @@
 }
 
 @font-face {
-  font-family: "colabero-regular"; /* un nombre pasar usar despues*/
-  src: url("/fonts/colabero-regular.ttf"); /*URL de la fuente*/
+  font-family: 'colabero-regular'; /* un nombre pasar usar despues */
+  src: url('/fonts/colabero-regular.ttf'); /* URL de la fuente */
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--terciary);
+}
+
+h1 {
+  font-family: colabero-regular;
+}
+
+li {
+  cursor: pointer;
+}
+
+.nav-link {
+  display: block;
+  max-width: 0rem;
+  height: 1.5px;
+  background: var(--primary);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+a:hover > .nav-link {
+  max-width: 100%;
+}
+
+.circle-dash {
+  width: 24rem;
+  height: 24rem;
+  /* dashed border */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='24rem' ry='24rem' stroke='%23424658FF' stroke-width='4' stroke-dasharray='13%2c 16' stroke-dashoffset='33' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 100%;
+}
+
+.social-media {
+  padding: 0.75rem;
+  border-radius: 9999px;
+  border-width: 2px;
+  width: 3rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  border-color: var(--primary);
+}
+
+.social-media:hover {
+  background: var(--primary);
 }
