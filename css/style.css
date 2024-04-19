@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "colabero-regular"; /* un nombre pasar usar despues */
-  src: url("/fonts/colabero-regular.ttf"); /* URL de la fuente */
+  src: url("../fonts/colabero-regular.ttf"); /* URL de la fuente */
 }
 
 body {
