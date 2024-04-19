@@ -140,19 +140,76 @@
           </a>
         </li>
       </ol>
-      <section class="circle-dash relative flex justify-center items-center">
-        <h1 class="text-[var(--primary)] font-black text-4xl">CAFÉ</h1>
-        <img
-          src="/img/coffeBeans.png"
-          alt="granos de café"
-          class="w-40 absolute top-1/2 -left-20"
-        />
-        <img
-          src="/img/paperCup.png"
-          alt="vaso de café"
-          class="w-48 absolute -top-1/4 -right-16 -rotate-12"
-        />
-      </section>
+      <div class="circle-dash relative">
+        <section
+          class="transition-all duration-300 opacity-0 opacity-100"
+          id="contentCoffee"
+        >
+          <img
+            src="/img/coffeBeans.png"
+            alt="granos de café"
+            class="w-40 absolute top-1/2 -left-20"
+          />
+          <h1>
+            CAFÉ-
+            <br />
+            TERIA
+          </h1>
+          <img
+            src="/img/paperCup.png"
+            alt="vaso de café"
+            class="w-48 absolute -top-1/4 -right-16 -rotate-12"
+          />
+        </section>
+
+        <section
+          class="transition-all duration-300 opacity-0"
+          id="contentPastry"
+        >
+          <img
+            src="/img/cupcake.png"
+            alt="pastelito"
+            class="w-40 absolute top-1/2 -left-20"
+          />
+          <h1>
+            PAS-
+            <br />
+            TELES
+          </h1>
+          <img
+            src="/img/donut.png"
+            alt="dona"
+            class="w-60 absolute bottom-1/2 -right-32 -rotate-12"
+          />
+        </section>
+
+        <section class="transition-all duration-300 opacity-0" id="contentTeas">
+          <img
+            src="/img/teaBag.png"
+            alt="bolsa de té"
+            class="w-44 absolute top-1/2 -left-12"
+          />
+          <h1>
+            INFU-
+            <br />
+            SIÓN
+          </h1>
+          <img
+            src="/img/cup.png"
+            alt="tasa para un te"
+            class="w-64 absolute bottom-2/3 -right-36"
+          />
+        </section>
+      </div>
+      <ol
+        class="flex flex-col absolute top-1/2 right-12 -translate-y-1/2 items-center gap-12"
+      >
+        <span class="connector absolute z-0" id="connector"></span>
+        <li class="dot-link active" id="coffe"></li>
+        <li class="dot-link inactive" id="pastry"></li>
+        <li class="dot-link inactive" id="teas"></li>
+      </ol>
     </main>
+    <script src="js/logic.js"></script>
   </body>
 </html>
