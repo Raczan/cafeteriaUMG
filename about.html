@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="/img/favicon.png" />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Cafetería Mariano</title>
+    <title>Cafetería Mariano - Nosotros</title>
   </head>
   <body>
     <nav class="flex items-center w-full py-8 px-12 gap-10 sticky top-0">
@@ -15,7 +15,7 @@
       </a>
       <span class="border-t border-[var(--primary)] flex grow"></span>
       <ol class="text-[var(--primary)] gap-12 flex">
-        <li class="font-bold">
+        <li>
           <a href="/index.html">
             INICIO
             <span class="nav-link"></span>
@@ -27,15 +27,15 @@
             <span class="nav-link"></span>
           </a>
         </li>
-        <li>
-          <a href="/about.html">
+        <li class="font-bold">
+          <a href="#">
             NOSOTROS
             <span class="nav-link"></span>
           </a>
         </li>
       </ol>
     </nav>
-    <main class="h-full relative flex justify-center items-center">
+    <main class="h-full relative flex justify-center">
       <ol class="flex flex-col gap-2 absolute top-1/2 left-12 -translate-y-1/2">
         <li class="group social-media">
           <a href="https://www.instagram.com/" target="_blank">
@@ -140,75 +140,33 @@
           </a>
         </li>
       </ol>
-      <div class="circle-dash relative">
-        <section
-          class="transition-all duration-300 opacity-0 opacity-100"
-          id="contentCoffee"
+      <div class="text-[#424658] space-y-24">
+        <h2
+          class="font-['colabero-regular'] text-2xl font-black text-[#424658] mt-10 text-center"
         >
-          <img
-            src="/img/coffeBeans.png"
-            alt="granos de café"
-            class="w-40 absolute top-1/2 -left-20"
-          />
-          <h1>
-            CAFÉ-
-            <br />
-            TERIA
-          </h1>
-          <img
-            src="/img/paperCup.png"
-            alt="vaso de café"
-            class="w-48 absolute -top-1/4 -right-16 -rotate-12"
-          />
-        </section>
-
-        <section
-          class="transition-all duration-300 opacity-0"
-          id="contentPastry"
-        >
-          <img
-            src="/img/cupcake.png"
-            alt="pastelito"
-            class="w-40 absolute top-1/2 -left-20"
-          />
-          <h1>
-            PAS-
-            <br />
-            TELES
-          </h1>
-          <img
-            src="/img/donut.png"
-            alt="dona"
-            class="w-60 absolute bottom-1/2 -right-32 -rotate-12"
-          />
-        </section>
-
-        <section class="transition-all duration-300 opacity-0" id="contentTeas">
-          <img
-            src="/img/teaBag.png"
-            alt="bolsa de té"
-            class="w-44 absolute top-1/2 -left-12"
-          />
-          <h1>
-            INFU-
-            <br />
-            SIÓN
-          </h1>
-          <img
-            src="/img/cup.png"
-            alt="tasa para un te"
-            class="w-64 absolute bottom-2/3 -right-36"
-          />
-        </section>
+          SOBRE NOSOTROS
+        </h2>
+        <div class="flex space-x-16 font-['colabero-regular'] text-center">
+          <div class="space-y-4">
+            <h2>Miguel Raczán</h2>
+            <p class="text-xs">2294-32-2432</p>
+          </div>
+          <div class="space-y-4">
+            <h2>Marcos Macario</h2>
+            <p class="text-xs">2294-32-0000</p>
+          </div>
+        </div>
+        <div class="flex space-x-16 font-['colabero-regular'] text-center">
+          <div class="space-y-4">
+            <h2>Damaris Sherly</h2>
+            <p class="text-xs">2294-32-0000</p>
+          </div>
+          <div class="space-y-4">
+            <h2>Rafael Carrera</h2>
+            <p class="text-xs">2294-32-0000</p>
+          </div>
+        </div>
       </div>
-      <ol
-        class="flex flex-col absolute top-1/2 right-12 -translate-y-1/2 items-center gap-12"
-      >
-        <span class="connector absolute z-0" id="connector"></span>
-        <li class="dot-link active" id="coffe"></li>
-        <li class="dot-link inactive" id="pastry"></li>
-        <li class="dot-link inactive" id="teas"></li>
-      </ol>
     </main>
     <script src="js/logic.js"></script>
   </body>
